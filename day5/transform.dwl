@@ -32,7 +32,7 @@ fun swapElements(array: Array<Number>, a: Number, b: Number): Array<Number> = do
     var indexA = array indexOf a
     var indexB = array indexOf b
     ---
-    (array update indexA with b update indexB with a) as Array<Number>
+    (array update indexA with b update indexB with a) then $ as Array<Number>
 }
 ---
 {

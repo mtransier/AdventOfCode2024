@@ -4,7 +4,7 @@ import lines from dw::core::Strings
 output application/json
 
 fun isSafe(report: Array<Number>): Boolean = do {
-    var diff = 1 to sizeOf(report) - 1
+    var diff = (1 to sizeOf(report) - 1) as Array
             map (report[$] - report[$ - 1])
     ---
     isEmpty(diff filter $ < 1 or $ > 3)
@@ -13,7 +13,7 @@ fun isSafe(report: Array<Number>): Boolean = do {
 
 fun damper(report: Array<Number>) =
     (report[1 to sizeOf(report) - 1] >>
-        ((1 to sizeOf(report) - 1)
+        ((1 to sizeOf(report) - 1) as Array
             map (report[0 to $ - 1] ++ (report[($ + 1) to sizeOf(report) - 1] default []))
         )
     ) map isSafe($)

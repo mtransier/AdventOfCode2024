@@ -1,6 +1,6 @@
 %dw 2.0
-import substring, substringBefore, indexOf from dw::core::Strings
 import indexWhere from dw::core::Arrays
+import indexOf, substring, substringBefore from dw::core::Strings
 
 output application/json
 
@@ -9,7 +9,7 @@ fun extractMatch(text: String, index: Number): Array<Number> = do {
 	---
 	(substring(substringBefore(matched, ")"), 4, indexOf(matched, ")"))
 		splitBy ",")
-			as Array<Number>
+			then $ as Array<Number>
 }
 
 fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>): Boolean = do {
@@ -21,17 +21,15 @@ fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>): Boolean =
 }
 
 fun execute(factors: Array<Number>|String, index: Number, dos: Array<Number>, donts: Array<Number>): Number =
-	if (typeOf(factors) == Array and doOrDont(index, dos, donts))
+	if (factors is Array and doOrDont(index, dos, donts))
 		factors[0] * factors[1]
-	else if (typeOf(factors) == String)
-		0 //factors
 	else 0
 ---
 {
 	part1: payload find(/mul\(\d+,\d+\)/)
 		map extractMatch(payload, $[0])
 			map $[0] * $[1]
-				reduce $$ + $,
+				then sum($),
 	part2: do {
 		var instructions = (input2 find(/mul\(\d+,\d+\)|(do\(\))|(don't\(\))/)
 								map if ($[2] != -1) "don't"
@@ -40,6 +38,6 @@ fun execute(factors: Array<Number>|String, index: Number, dos: Array<Number>, do
 		var dos = instructions find "do"
 		var donts = instructions find "don't"
 		---
-		instructions map execute($, $$, dos, donts) reduce $$ + $
+		instructions map execute($, $$, dos, donts) then sum($)
 	}
 }
