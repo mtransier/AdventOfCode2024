@@ -1,8 +1,10 @@
 %dw 2.0
-input payload text/plain
+import lines from dw::core::Strings
+
 output application/json
+
 fun createList(note: String, index: Number): Array<Number> =
-    note splitBy '\r\n' map ($ splitBy '   ') map ($[index] as Number)
+    lines(note) map ($ splitBy '   ') map ($[index] as Number)
 
 var list1 = createList(payload, 0)
 var list2 = createList(payload, 1) orderBy $
