@@ -1,8 +1,9 @@
 %dw 2.0
-input payload text/plain
-output application/json
 import substring, substringBefore, indexOf from dw::core::Strings
 import indexWhere from dw::core::Arrays
+
+output application/json
+
 fun extractMatch(text: String, index: Number): Array<Number> = do {
 	var matched = substring(payload, index, sizeOf(payload))
 	---
@@ -10,6 +11,7 @@ fun extractMatch(text: String, index: Number): Array<Number> = do {
 		splitBy ",")
 			as Array<Number>
 }
+
 fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>) = do {
     var doIndex = dos indexWhere $ > index
     var dontIndex = donts indexWhere $ > index
@@ -17,6 +19,7 @@ fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>) = do {
     (if (doIndex == 0) 0 else if (doIndex == -1) dos[-1] else dos[doIndex - 1]) >=
         (if (dontIndex == 0) 0 else if (dontIndex == -1) donts[-1] else donts[dontIndex - 1])
 }
+
 fun isValid(factors: Array<Number>|String, index: Number, dos: Array<Number>, donts: Array<Number>) =
 	if (typeOf(factors) == Array and doOrDont(index, dos, donts))
 		factors[0] * factors[1]
@@ -37,6 +40,6 @@ fun isValid(factors: Array<Number>|String, index: Number, dos: Array<Number>, do
 		var dos = instructions find "do"
 		var donts = instructions find "don't"
 		---
-		instructions map isValid($, $$, log("dos", dos), log("donts", donts)) reduce $$ + $
+		instructions map isValid($, $$, dos, donts) reduce $$ + $
 	}
 }

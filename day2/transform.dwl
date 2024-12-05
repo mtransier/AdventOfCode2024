@@ -1,5 +1,8 @@
 %dw 2.0
+import lines from dw::core::Strings
+
 output application/json
+
 fun isSafe(report: Array<Number>): Boolean = do {
     var diff = 1 to sizeOf(report) - 1
             map (report[$] - report[$ - 1])
@@ -7,6 +10,7 @@ fun isSafe(report: Array<Number>): Boolean = do {
     isEmpty(diff filter $ < 1 or $ > 3)
         or isEmpty(diff filter $ > -1 or $ < -3)
 }
+
 fun damper(report: Array<Number>) =
     (report[1 to sizeOf(report) - 1] >>
         ((1 to sizeOf(report) - 1)
@@ -15,9 +19,9 @@ fun damper(report: Array<Number>) =
     ) map isSafe($)
         reduce $$ or $
 
-var reports = payload splitBy '\r\n'
+var reports = lines(payload)
 ---
 {
-	part1: sizeOf(reports map isSafe($ splitBy ' ') filter $),
-	part2: sizeOf(reports map damper($ splitBy ' ') filter $)
+	part1: sizeOf(reports map isSafe(($ splitBy ' ') as Array<Number>) filter $),
+	part2: sizeOf(reports map damper(($ splitBy ' ') as Array<Number>) filter $)
 }

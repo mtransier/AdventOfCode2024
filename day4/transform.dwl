@@ -1,14 +1,18 @@
 %dw 2.0
+import lines from dw::core::Strings
 import toArray from dw::util::Coercions
-input payload text/plain
+
 output application/json
-var rows = payload splitBy "\r\n" map toArray($)
+
+var rows = lines(payload) map toArray($)
 var columns = (0 to sizeOf(rows[0]) - 1 map (column) -> (0 to sizeOf(rows) - 1) map (row) -> rows[row][column])
 var downDiagonals = (sizeOf(rows) -1 to 0 map (row) -> (0 to sizeOf(columns) map (column) -> rows[row + column][column]) filter !isEmpty($))
     ++ (1 to sizeOf(columns) - 1 map (column) -> (0 to sizeOf(rows) map (row) -> rows[row][row + column]) filter !isEmpty($))
 var upDiagonals = (0 to sizeOf(rows) map (row) -> (0 to sizeOf(columns) map (column) -> if (row - column >= 0) rows[row - column][column] else null) filter !isEmpty($))
     ++ (1 to sizeOf(columns) - 2 map (column) -> (sizeOf(rows) - 1 to 0 map (row) -> rows[row][sizeOf(rows) - row + column]) filter !isEmpty($))
+
 fun findXMAS(text: Array<Array<String>>): Number = text map sizeOf($ joinBy "" find "XMAS") then sum($)
+
 fun detectXmas(row: Number, column: Number): Boolean =
     ((rows[row - 1][column - 1] == "M" and rows[row + 1][column + 1] == "S") or (rows[row - 1][column - 1] == "S" and rows[row + 1][column + 1] == "M"))
     and ((rows[row + 1][column - 1] == "M" and rows[row - 1][column + 1] == "S") or (rows[row + 1][column - 1] == "S" and rows[row - 1][column + 1] == "M"))

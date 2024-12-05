@@ -1,11 +1,12 @@
 %dw 2.0
 import every, firstWith, some, takeWhile from dw::core::Arrays
+import lines from dw::core::Strings
 import update from dw::util::Values
 
 output application/json
 
-var rules = payload splitBy '\r\n' takeWhile !isBlank($) map (($ splitBy '|') map $ as Number) as Array<Number>
-var pageUpdates = payload splitBy '\r\n' filter ($ contains ',') map (($ splitBy ',') map $ as Number) as Array<Number>
+var rules = lines(payload) takeWhile !isBlank($) map (($ splitBy '|') map $ as Number) as Array<Number>
+var pageUpdates = lines(payload) filter ($ contains ',') map (($ splitBy ',') map $ as Number) as Array<Number>
 
 fun checkRules(pages: Array<Number>): Boolean =
     (pages[1 to -1] map (page, index) ->
@@ -33,7 +34,6 @@ fun swapElements(array: Array<Number>, a: Number, b: Number): Array<Number> = do
     ---
     (array update indexA with b update indexB with a) as Array<Number>
 }
-
 ---
 {
     part1: pageUpdates filter checkRules($) map $[sizeOf($) / 2] then sum($),
