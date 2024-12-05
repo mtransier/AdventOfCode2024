@@ -5,14 +5,14 @@ import indexWhere from dw::core::Arrays
 output application/json
 
 fun extractMatch(text: String, index: Number): Array<Number> = do {
-	var matched = substring(payload, index, sizeOf(payload))
+	var matched = substring(text, index, sizeOf(text))
 	---
 	(substring(substringBefore(matched, ")"), 4, indexOf(matched, ")"))
 		splitBy ",")
 			as Array<Number>
 }
 
-fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>) = do {
+fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>): Boolean = do {
     var doIndex = dos indexWhere $ > index
     var dontIndex = donts indexWhere $ > index
     ---
@@ -20,7 +20,7 @@ fun doOrDont(index: Number, dos: Array<Number>, donts: Array<Number>) = do {
         (if (dontIndex == 0) 0 else if (dontIndex == -1) donts[-1] else donts[dontIndex - 1])
 }
 
-fun isValid(factors: Array<Number>|String, index: Number, dos: Array<Number>, donts: Array<Number>) =
+fun execute(factors: Array<Number>|String, index: Number, dos: Array<Number>, donts: Array<Number>): Number =
 	if (typeOf(factors) == Array and doOrDont(index, dos, donts))
 		factors[0] * factors[1]
 	else if (typeOf(factors) == String)
@@ -33,13 +33,13 @@ fun isValid(factors: Array<Number>|String, index: Number, dos: Array<Number>, do
 			map $[0] * $[1]
 				reduce $$ + $,
 	part2: do {
-		var instructions = (payload find(/mul\(\d+,\d+\)|(do\(\))|(don't\(\))/)
+		var instructions = (input2 find(/mul\(\d+,\d+\)|(do\(\))|(don't\(\))/)
 								map if ($[2] != -1) "don't"
 									else if ($[1] != -1) "do"
-									else extractMatch(payload, $[0]))
+									else extractMatch(input2, $[0]))
 		var dos = instructions find "do"
 		var donts = instructions find "don't"
 		---
-		instructions map isValid($, $$, dos, donts) reduce $$ + $
+		instructions map execute($, $$, dos, donts) reduce $$ + $
 	}
 }
