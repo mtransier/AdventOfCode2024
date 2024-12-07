@@ -8,7 +8,7 @@ Credits to [Alexandra Martinez](https://github.com/alexandramartinez/adventofcod
 
 <details>
   <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day1/transform.dwl
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day1/transform.dwl#L1-L17
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day1"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
@@ -17,7 +17,7 @@ https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e4
 
 <details>
   <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day2/transform.dwl
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day2/transform.dwl#L1-L27
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day2"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
@@ -26,7 +26,7 @@ https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e4
 
 <details>
   <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day3/transform.dwl
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day3/transform.dwl#L1-L43
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day3"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
@@ -35,7 +35,7 @@ https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e4
 
 <details>
   <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day4/transform.dwl
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day4/transform.dwl#L1-L37
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day4"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
@@ -44,7 +44,7 @@ https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e4
 
 <details>
   <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day5/transform.dwl
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day5/transform.dwl#L1-L41
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day5"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
@@ -52,8 +52,8 @@ https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e4
 ## 🔹 Day 6
 
 <details>
-  <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day6/transform.dwl
+  <summary>Script (Part 2 WIP)</summary>
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day6/transform.dwl#L1-L108
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day6"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
@@ -62,7 +62,7 @@ https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e4
 
 <details>
   <summary>Script</summary>
-https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day7/transform.dwl
+https://github.com/mtransier/AdventOfCode2024/blob/1ed4f7cce2a681169e490271764e49eae0366f1a/day7/transform.dwl#L1-L38
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day7"><img width="300" src="https://github.com/alexandramartinez/adventofcode-2024/raw/main/images/dwplayground-button.png"></a>
