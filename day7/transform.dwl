@@ -33,6 +33,6 @@ fun findSolutions(equations: Array<Object>, base: Number, toBase: (Number) -> St
     )
 ---
 {
-    part1: findSolutions(equations, 2, toBinary) filter !isEmpty($) then sum($),
-    part2: findSolutions(equations, 3, toTernary) filter !isEmpty($) then sum($)
+    part1: findSolutions(equations, 2, toBinary) filter !isEmpty($) then sum($ as Array<Number>),
+    part2: findSolutions(equations, 3, toTernary) filter !isEmpty($) then sum($ as Array<Number>)
 }
