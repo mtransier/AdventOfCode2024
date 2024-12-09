@@ -80,7 +80,7 @@ Credits to [Alexandra Martinez](https://github.com/alexandramartinez/adventofcod
 
 <details>
   <summary>Script</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/3ac77f587b6aece77ac428da2dcb0bf6a598cf1c/day9/transform.dwl#L1-L67
+  https://github.com/mtransier/AdventOfCode2024/blob/ba8e3cea2c595d4513d240460d52df46b2e0d2d2/day9/transform.dwl#L1-L67
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day9"><img width="300" src="images/dwplayground-button.png"></a>
