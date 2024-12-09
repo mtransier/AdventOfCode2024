@@ -62,6 +62,6 @@ var fileMap: Array<File> = (0 to (sizeOf(diskMap) - 1)) as Array map (diskIndex)
                         }
                     ) then (slice($, 0, firstFit) << file ++ slice($, firstFit, sizeOf($)))
                 else fileMap
-            }
-    ) as Array<File> then checkSum2($)
+            } as Array<File>
+    ) then checkSum2($)
 }
