@@ -1,6 +1,6 @@
 %dw 2.0
 import indexWhere from dw::core::Arrays
-import lines, mapString from dw::core::Strings
+import lines from dw::core::Strings
 import update from dw::util::Values
 
 output application/json
