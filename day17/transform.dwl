@@ -6,7 +6,7 @@ output application/json
 
 type State = { program: Array<Number>, A: Number, B: Number, C: Number, out: Array<Number>, ip: Number }
 
-var in = lines(day17)
+var in = lines(payload)
 var initialState: State = {
     program: ((in filter ($ contains "Program"))[0] match /.*: (.+)/)[1] splitBy ',' map $ as Number,
     A: ((in filter ($ contains "Register A"))[0] match /.* A: (\d+)/)[1] as Number,
@@ -40,24 +40,24 @@ fun combo(state: State): Number =
         else -> dw::Runtime::fail("Illegal combo operand")
     }
 
-fun nlog<T>(prefix: String = "", value: T): T =
-    //log(prefix, value)
+fun ilog<T>(prefix: String = "", state: State, value: T): T =
+    //log("$(state.ip) $(prefix)", value)
     value
 
 fun execute(state: State): State =
     if (state.ip >= sizeOf(state.program)) state
     else execute(
         state.program[state.ip] match {
-            case 0 /* adv */ -> state update { case .A -> trunc($ / pow(2, nlog("$(state.ip) adv", combo(state)))) }
-            case 1 /* bxl */ -> state update { case .B -> $ xor nlog("$(state.ip) bxl",state.program[state.ip + 1]) }
-            case 2 /* bst */ -> state update { case .B -> nlog("$(state.ip) bst", combo(state)) mod 8 }
+            case 0 /* adv */ -> state update { case .A -> trunc($ / pow(2, ilog("adv", state, combo(state)))) }
+            case 1 /* bxl */ -> state update { case .B -> $ xor ilog("bxl", state, state.program[state.ip + 1]) }
+            case 2 /* bst */ -> state update { case .B -> ilog("bst", state, combo(state)) mod 8 }
             case 3 /* jnz */ -> state update {
-                case .ip -> nlog("$(state.ip) jnz", if (state.A == 0) $ else state.program[state.ip + 1])
+                case .ip -> ilog("jnz", state, if (state.A == 0) $ else state.program[state.ip + 1])
             }
-            case 4 /* bxc */ -> state update { case .B -> nlog("$(state.ip) bxc", state.B) xor state.C }
-            case 5 /* out */ -> state update { case .out -> $ << (nlog("$(state.ip) out", combo(state)) mod 8) }
-            case 6 /* bdv */ -> state update { case .B -> trunc(state.A / pow(2, nlog("$(state.ip) bdv", combo(state)))) }
-            case 7 /* cdv */ -> state update { case .C -> trunc(state.A / pow(2, nlog("$(state.ip) cdv", combo(state)))) }
+            case 4 /* bxc */ -> state update { case .B -> ilog("bxc", state, state.B) xor state.C }
+            case 5 /* out */ -> state update { case .out -> $ << (ilog("out", state, combo(state)) mod 8) }
+            case 6 /* bdv */ -> state update { case .B -> trunc(state.A / pow(2, ilog("bdv", state, combo(state)))) }
+            case 7 /* cdv */ -> state update { case .C -> trunc(state.A / pow(2, ilog("cdv", state, combo(state)))) }
             else -> dw::Runtime::fail("Illegal opcode")
         } then $ update {
             case .ip if (state.program[state.ip] != 3 or state.A == 0) -> $ + 2
