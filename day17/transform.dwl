@@ -16,9 +16,6 @@ var initialState: State = {
     ip: 0
 }
 
-fun trunc(number: Number): Number =
-    (number as String match /(\d+)\.?\d*/)[1] as Number
-
 fun xor(a: Number, b: Number): Number = do {
     var aBinary: String = toBinary(a)
     var bBinary: String = toBinary(b)
@@ -27,7 +24,6 @@ fun xor(a: Number, b: Number): Number = do {
     fromBinary(
         leftPad(aBinary, length, "0") mapString
             if ($ == leftPad(bBinary, length, "0")[$$]) "0" else "1"
-            reduce ($$ ++ $)
     )
 }
 
@@ -48,7 +44,7 @@ fun execute(state: State): State =
     if (state.ip >= sizeOf(state.program)) state
     else execute(
         state.program[state.ip] match {
-            case 0 /* adv */ -> state update { case .A -> trunc($ / pow(2, ilog("adv", state, combo(state)))) }
+            case 0 /* adv */ -> state update { case .A -> floor($ / pow(2, ilog("adv", state, combo(state)))) }
             case 1 /* bxl */ -> state update { case .B -> $ xor ilog("bxl", state, state.program[state.ip + 1]) }
             case 2 /* bst */ -> state update { case .B -> ilog("bst", state, combo(state)) mod 8 }
             case 3 /* jnz */ -> state update {
@@ -56,8 +52,8 @@ fun execute(state: State): State =
             }
             case 4 /* bxc */ -> state update { case .B -> ilog("bxc", state, state.B) xor state.C }
             case 5 /* out */ -> state update { case .out -> $ << (ilog("out", state, combo(state)) mod 8) }
-            case 6 /* bdv */ -> state update { case .B -> trunc(state.A / pow(2, ilog("bdv", state, combo(state)))) }
-            case 7 /* cdv */ -> state update { case .C -> trunc(state.A / pow(2, ilog("cdv", state, combo(state)))) }
+            case 6 /* bdv */ -> state update { case .B -> floor(state.A / pow(2, ilog("bdv", state, combo(state)))) }
+            case 7 /* cdv */ -> state update { case .C -> floor(state.A / pow(2, ilog("cdv", state, combo(state)))) }
             else -> dw::Runtime::fail("Illegal opcode")
         } then $ update {
             case .ip if (state.program[state.ip] != 3 or state.A == 0) -> $ + 2
@@ -66,7 +62,7 @@ fun execute(state: State): State =
 
 fun toOctal(decimal: Number): String =
     if (decimal < 8) decimal as String
-    else toOctal(trunc(decimal / 8)) ++ (decimal mod 8) as String
+    else toOctal(floor(decimal / 8)) ++ (decimal mod 8) as String
 
 fun toDecimal(octal: String): Number =
     octal reduce $$ * 8 + $ as Number
