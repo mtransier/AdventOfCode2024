@@ -1,5 +1,7 @@
 %dw 2.0
+import countBy from dw::core::Arrays
 import lines from dw::core::Strings
+import logn from dw::util::Math
 
 output application/json
 
@@ -17,8 +19,8 @@ fun progress(robot: Robot, iterations: Number): Robot =
     }
 
 fun printMap(robots: Array<Robot>): Array<String> =
-    (0 to sizeX) as Array map ((y) ->
-        (0 to sizeY) as Array map ((x) ->
+    (0 to sizeY) as Array map ((y) ->
+        (0 to sizeX) as Array map ((x) ->
             sizeOf(robots filter ($.px == x and $.py == y))
                 match {
                     case 0 -> " "
@@ -26,6 +28,14 @@ fun printMap(robots: Array<Robot>): Array<String> =
                 }
         ) joinBy ''
     )
+
+fun entropy(robots: Array<Robot>): Number =
+    (0 to sizeY) as Array map ((y) -> do {
+        var p = (robots countBy $.py == y) / sizeOf(robots)
+        ---
+        if (p > 0) - p * logn(p) / logn(2)
+        else 0
+    }) then avg($)
 ---
 {
     part1: (robots reduce (robot, newRobots = []) ->
@@ -44,10 +54,15 @@ fun printMap(robots: Array<Robot>): Array<String> =
                         reduce $$ * $,
     part2: (0 to 99) as Array
         map ((i) -> i * 101 + 14)
-            map (iteration) -> {
-                (iteration):
-                    (robots reduce (robot, newRobots = []) ->
+            map ((iteration) -> do {
+                var newRobots = (robots reduce (robot, newRobots = []) ->
                         newRobots << progress(robot, iteration)) as Array<Robot>
-                            then printMap($)
+                ---
+                {
+                    iteration: iteration,
+                    robots: newRobots,
+                    entropy: entropy(newRobots)
                 }
+            }) filter ($.entropy < 0.06)
+                then $[0] update { case .robots -> printMap($) }
 }
