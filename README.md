@@ -161,9 +161,11 @@ Puzzle: [Claw Contraption](https://adventofcode.com/2024/day/13)
 
 Puzzle: [Restroom Redoubt](https://adventofcode.com/2024/day/14)
 
+The simulation of these robots does not require a step-wise round-based approach, it is possible to directly calculate their final position. So part 1 is quite easy. Part 2 is a bit more difficult if you want to automatically find the easter egg in the display. It is indeed possible to do this without visual identification by calculating the entropy of the resulting picture (I actually calculated the average entropy of the lines). When it drops, i.e., when there is less chaos, we have found the picture. An additional performance improvement was to not search each and every iteration, but restrict the search to the frames that looked promising: every 101st frame shows some suspicious arrangement of robots.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day14/transform.dwl#L1-L53
+  https://github.com/mtransier/AdventOfCode2024/blob/c20085e707592aa7a08d7b7ffc2e6bbb850dfcd1/day14/transform.dwl#L1-L68
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day14"><img width="300" src="images/dwplayground-button.png"></a>
