@@ -69,6 +69,8 @@ Here you can see some more mollifying casting/defaulting in action - the compile
 
 ## Day 6
 
+Puzzle: [Guard Gallivant](https://adventofcode.com/2024/day/6)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day06/transform.dwl#L1-L116
@@ -77,6 +79,8 @@ Here you can see some more mollifying casting/defaulting in action - the compile
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day06"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 7
+
+Puzzle: [Bridge Repair](https://adventofcode.com/2024/day/7)
 
 <details>
   <summary>Solution</summary>
@@ -87,6 +91,8 @@ Here you can see some more mollifying casting/defaulting in action - the compile
 
 ## Day 8
 
+Puzzle: [Resonant Collinearity](https://adventofcode.com/2024/day/8)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day08/transform.dwl#L1-L57
@@ -95,6 +101,8 @@ Here you can see some more mollifying casting/defaulting in action - the compile
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day08"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 9
+
+Puzzle: [Disk Fragmenter](https://adventofcode.com/2024/day/9)
 
 <details>
   <summary>Solution</summary>
@@ -118,6 +126,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 11
 
+Puzzle: [Plutonian Pebbles](https://adventofcode.com/2024/day/11)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day11/transform.dwl#L1-L50
@@ -126,6 +136,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day11"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 12
+
+Puzzle: [Garden Groups](https://adventofcode.com/2024/day/12)
 
 <details>
   <summary>Solution</summary>
@@ -136,6 +148,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 13
 
+Puzzle: [Claw Contraption](https://adventofcode.com/2024/day/13)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day13/transform.dwl#L1-L37
@@ -144,6 +158,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day13"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 14
+
+Puzzle: [Restroom Redoubt](https://adventofcode.com/2024/day/14)
 
 <details>
   <summary>Solution</summary>
@@ -154,6 +170,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 15
 
+Puzzle: [Warehouse Woes](https://adventofcode.com/2024/day/15)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day15/transform.dwl#L1-L77
@@ -162,6 +180,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day15"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 16
+
+Puzzle: [Reindeer Maze](https://adventofcode.com/2024/day/16)
 
 <details>
   <summary>Solution</summary>
@@ -172,6 +192,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 17
 
+Puzzle: [Chronospatial Computer](https://adventofcode.com/2024/day/17)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day17/transform.dwl#L1-L84
@@ -180,6 +202,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day17"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 18
+
+Puzzle: [RAM Run](https://adventofcode.com/2024/day/18)
 
 <details>
   <summary>Solution</summary>
@@ -190,6 +214,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 19
 
+Puzzle: [Linen Layout](https://adventofcode.com/2024/day/19)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day19/transform.dwl#L1-L50
@@ -198,6 +224,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day19"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 20
+
+Puzzle: [Race Condition](https://adventofcode.com/2024/day/20)
 
 <details>
   <summary>Solution</summary>
@@ -208,6 +236,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 21
 
+Puzzle: [Keypad Conundrum](https://adventofcode.com/2024/day/21)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day21/transform.dwl#L1-L61
@@ -216,6 +246,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day21"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 22
+
+Puzzle: [Monkey Market](https://adventofcode.com/2024/day/22)
 
 <details>
   <summary>Solution</summary>
@@ -226,6 +258,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 23
 
+Puzzle: [LAN Party](https://adventofcode.com/2024/day/23)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day23/transform.dwl#L1-L75
@@ -235,6 +269,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 ## Day 24
 
+Puzzle: [Crossed Wires](https://adventofcode.com/2024/day/24)
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day24/transform.dwl#L1-L68
@@ -243,6 +279,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day24"><img width="300" src="images/dwplayground-button.png"></a>
 
 ## Day 25
+
+Puzzle: [Code Chronicle](https://adventofcode.com/2024/day/25)
 
 <details>
   <summary>Solution</summary>
