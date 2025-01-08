@@ -22,7 +22,7 @@ var antennas: Dictionary<Array<Position>> =
             (0 to sizeOf(antennaMap[0]) - 1) as Array<Number> map ((x) ->
                 if (antennaMap[y][x] == frequency) { x: x, y: y } else null
             ) filter !isEmpty($)
-        ) as Array<Position> then flatten($)
+        ) then flatten($)
     }
 
 fun calculateAntinodes(a1: Position, a2: Position, limit: Boolean): Array<Position> = do {

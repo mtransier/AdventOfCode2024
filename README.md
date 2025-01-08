@@ -71,6 +71,8 @@ Here you can see some more mollifying casting/defaulting in action - the compile
 
 Puzzle: [Guard Gallivant](https://adventofcode.com/2024/day/6)
 
+Day 6 brought the first 2D puzzle, many more to come. The most important thing I learned on that day was about recursion. If you just create a recursive function, it will most likely fail with a stack overflow after 256 recursions. However, the DataWeave compiler will be able to optimize the recursion if you create the function as tail-recursive, i.e., the recursive call has to be the last operation in the function. In order to check if the function fullfils this condition, you can use the `@TailRec()` annotation, which will create an error if the function is not tail-recursive.
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day06/transform.dwl#L1-L116
@@ -81,6 +83,8 @@ Puzzle: [Guard Gallivant](https://adventofcode.com/2024/day/6)
 ## Day 7
 
 Puzzle: [Bridge Repair](https://adventofcode.com/2024/day/7)
+
+In order to enumerate all the possible solutions for the given equations, I use binary numbers (or ternary numbers for part 2), where each digit represents an operation (0 &rarr; "+", 1 &rarr; "*", 2 &rarr; "||"). While binary is natively supported by DataWeave, I had to add my own implementation for a conversion from decimal to ternary.
 
 <details>
   <summary>Solution</summary>
@@ -93,6 +97,8 @@ Puzzle: [Bridge Repair](https://adventofcode.com/2024/day/7)
 
 Puzzle: [Resonant Collinearity](https://adventofcode.com/2024/day/8)
 
+Again some kind of 2D puzzle, where it is extremely helpful to have a function for printing the map for debugging purposes. `printMap(antinodes: Array<Position>): Array<String>` does exactly this. It's not required to caculate the solution, still I decided to keep it in the sources.
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day08/transform.dwl#L1-L57
@@ -103,6 +109,8 @@ Puzzle: [Resonant Collinearity](https://adventofcode.com/2024/day/8)
 ## Day 9
 
 Puzzle: [Disk Fragmenter](https://adventofcode.com/2024/day/9)
+
+For recursive solutions that use a large amount of state, DataWeave seems not to be the best suited. In part 2, the `reduce` (which is in fact a recursive function), modifies a 10 kB payload (the disk map) again and again, which takes quite some time to finish (~10 min on my machine, to be precise). Let me know if you found a more performant way to solve this in DataWeave.
 
 <details>
   <summary>Solution</summary>
@@ -115,7 +123,7 @@ Puzzle: [Disk Fragmenter](https://adventofcode.com/2024/day/9)
 
 Puzzle: [Hoof It](https://adventofcode.com/2024/day/10)
 
-This time, I have two solutions for part 1: the initial one designed to solve exactly this part and the solution for part 2, which is also usable for part 1. That happens if you don't know what comes next ... I still decided to keep them both in the sources. Part 1 focuses on finding the reachable points, while part 2 keeps track of the different paths.
+This time, I have two solutions for part 1: the initial one designed to solve exactly this part and the solution for part 2, which is also usable for part 1. That happens if you don't know what comes next ... I still decided to keep them both in the sources. Part 1 focuses on finding the reachable points, while part 2 keeps track of the different paths. Given that only the second solution is required, this is one of the four shortest solutions of all 25 days, with just 31 lines (including blank lines).
 
 <details>
   <summary>Solution</summary>
