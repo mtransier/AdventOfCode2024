@@ -136,6 +136,8 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 Puzzle: [Plutonian Pebbles](https://adventofcode.com/2024/day/11)
 
+While the straight-forward solution for part 1 was quite easy, the same solution would have taken ~74 years to finish for part 2, according to my forecast. That gave me enough time to work out an improved solution that was fast enough for part 2. And it turned out that a very small tweak improved the runtime to ~2 min. The idea is to not look at each stone separately, but count them and multiply the result (as the order of the stones is not important).
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day11/transform.dwl#L1-L50
@@ -147,6 +149,8 @@ Puzzle: [Plutonian Pebbles](https://adventofcode.com/2024/day/11)
 
 Puzzle: [Garden Groups](https://adventofcode.com/2024/day/12)
 
+The next 2D puzzle. The difficulty was how to identify the regions. My solutions goes through all plants and recursively adds them to regions (using `reduce`). As I am moving from top right in reading order, only left and upper neighbors have to be checked (if they have the same plant type and thus belong to the same region). Parts 1 and 2 then only differ in how the fences/sides are counted for the different regions.
+
 <details>
   <summary>Solution</summary>
   https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day12/transform.dwl#L1-L84
@@ -157,6 +161,8 @@ Puzzle: [Garden Groups](https://adventofcode.com/2024/day/12)
 ## Day 13
 
 Puzzle: [Claw Contraption](https://adventofcode.com/2024/day/13)
+
+This puzzle was probably created to mislead into simulating the claws. In fact, you just have to solve a simple equation system with two variables. So the portion of the script responsible for parsing the input is almost the biggest part of the whole solution.
 
 <details>
   <summary>Solution</summary>

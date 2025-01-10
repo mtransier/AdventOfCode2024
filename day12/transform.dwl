@@ -8,10 +8,10 @@ output application/json
 type Plant = { x: Number, y: Number }
 type Region = Array<Plant>
 
-var gardenMap = lines(payload)
+var gardenMap: Array<String> = lines(payload)
 var plants: Dictionary<Array<Plant>> = ((0 to sizeOf(gardenMap) - 1) as Array flatMap (y) ->
     (0 to sizeOf(gardenMap[y]) - 1) as Array map (x) ->
-        { x: x, y: y, plantType: gardenMap[y][x] }
+        { x: x, y: y, plantType: gardenMap[y][x] as String }
 ) groupBy $.plantType
     mapObject (plants, plantType) ->
         { (plantType): plants map ((plant) -> (plant - "plantType") as Plant) }

@@ -34,4 +34,4 @@ fun solveEquations(a1, b1, c1, a2, b2, c2): Object = do {
         filter isInteger($.A) and isInteger($.B)
             map (3 * $.A + $.B)
                 then sum($)
-}                
+}

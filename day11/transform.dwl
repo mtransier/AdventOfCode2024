@@ -8,7 +8,7 @@ output application/json
 var stones = payload splitBy " "
 var stoneDict = stones groupBy $ mapObject { ($$): sizeOf($) }
 
-@TailRec
+@TailRec()
 fun blink(stones: Array, maxIterations: Number, iteration: Number = 0): Array =
     if (iteration == maxIterations) stones
     else blink(
@@ -31,6 +31,7 @@ fun blinkStone(stone: String): Array<String> = do {
     else [(stone as Number * 2024) as String]
 }
 
+@TailRec()
 fun blinkStones(stones: Dictionary<Number>, iterations: Number): Dictionary<Number> =
     if (iterations == 0) stones
     else blinkStones(
