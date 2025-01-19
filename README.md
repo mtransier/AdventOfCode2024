@@ -10,7 +10,7 @@ The first thing I learned was that using the function `dw::core::Strings::lines`
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day01/transform.dwl#L1-L17
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day01/transform.dwl#L1-L17
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day01"><img width="300" src="images/dwplayground-button.png"></a>
@@ -23,7 +23,7 @@ Working on day 2 I started to notice that the type system in DataWeave sometimes
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day02/transform.dwl#L1-L28
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day02/transform.dwl#L1-L28
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day02"><img width="300" src="images/dwplayground-button.png"></a>
@@ -36,7 +36,7 @@ For this pattern matching exercise I decided to use `find` to return all occuren
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day03/transform.dwl#L1-L43
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day03/transform.dwl#L1-L43
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day03"><img width="300" src="images/dwplayground-button.png"></a>
@@ -49,7 +49,7 @@ Another pattern matching exercise, this time in 2D. While part one still uses `f
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day04/transform.dwl#L1-L37
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day04/transform.dwl#L1-L37
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day04"><img width="300" src="images/dwplayground-button.png"></a>
@@ -62,7 +62,7 @@ Here you can see some more mollifying casting/defaulting in action - the compile
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day05/transform.dwl#L1-L41
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day05/transform.dwl#L1-L41
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day05"><img width="300" src="images/dwplayground-button.png"></a>
@@ -75,7 +75,7 @@ Day 6 brought the first 2D puzzle, many more to come. The most important thing I
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day06/transform.dwl#L1-L116
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day06/transform.dwl#L1-L116
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day06"><img width="300" src="images/dwplayground-button.png"></a>
@@ -88,7 +88,7 @@ In order to enumerate all the possible solutions for the given equations, I use 
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day07/transform.dwl#L1-L38
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day07/transform.dwl#L1-L38
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day07"><img width="300" src="images/dwplayground-button.png"></a>
@@ -101,7 +101,7 @@ Again some kind of 2D puzzle, where it is extremely helpful to have a function f
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day08/transform.dwl#L1-L57
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day08/transform.dwl#L1-L57
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day08"><img width="300" src="images/dwplayground-button.png"></a>
@@ -114,7 +114,7 @@ For recursive solutions that use a large amount of state, DataWeave seems not to
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day09/transform.dwl#L1-L67
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day09/transform.dwl#L1-L67
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day09"><img width="300" src="images/dwplayground-button.png"></a>
@@ -127,7 +127,7 @@ This time, I have two solutions for part 1: the initial one designed to solve ex
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day10/transform.dwl#L1-L46
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day10/transform.dwl#L1-L46
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day10"><img width="300" src="images/dwplayground-button.png"></a>
@@ -140,7 +140,7 @@ While the straight-forward solution for part 1 was quite easy, the same solution
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day11/transform.dwl#L1-L50
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day11/transform.dwl#L1-L50
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day11"><img width="300" src="images/dwplayground-button.png"></a>
@@ -153,7 +153,7 @@ The next 2D puzzle. The difficulty was how to identify the regions. My solutions
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day12/transform.dwl#L1-L84
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day12/transform.dwl#L1-L84
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day12"><img width="300" src="images/dwplayground-button.png"></a>
@@ -166,7 +166,7 @@ This puzzle was probably created to mislead into simulating the claws. In fact, 
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day13/transform.dwl#L1-L37
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day13/transform.dwl#L1-L37
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day13"><img width="300" src="images/dwplayground-button.png"></a>
@@ -179,7 +179,7 @@ The simulation of these robots does not require a step-wise round-based approach
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/c20085e707592aa7a08d7b7ffc2e6bbb850dfcd1/day14/transform.dwl#L1-L68
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day14/transform.dwl#L1-L68
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day14"><img width="300" src="images/dwplayground-button.png"></a>
@@ -188,9 +188,11 @@ The simulation of these robots does not require a step-wise round-based approach
 
 Puzzle: [Warehouse Woes](https://adventofcode.com/2024/day/15)
 
+This 2D puzzle is almost a small game in DataWeave. If you load it into the playground, you can use the "<", ">", "^", "v" keys to add instructions to the input for the robot to move around in the warehouse and see the result on the right side in the output - if you change the body of the script to `moves reduce ((direction, warehouse = warehouse) -> move(warehouse, direction))`. This will parse the moves from the input and recursivly appy them to the warehouse map.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day15/transform.dwl#L1-L77
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day15/transform.dwl#L1-L77
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day15"><img width="300" src="images/dwplayground-button.png"></a>
@@ -199,9 +201,28 @@ Puzzle: [Warehouse Woes](https://adventofcode.com/2024/day/15)
 
 Puzzle: [Reindeer Maze](https://adventofcode.com/2024/day/16)
 
+Day 16 was the most challenging puzzle for me. After trying a depth-first search first, I decided to switch to [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) for finding the shortes path through the maze. The difficult part is the specific metric, which adds a penalty for changing direction. The heuristic function of A* needs to take this into account, otherwise, the algorithm won't find the shortest path. Part 2 adds another challenge, as equivalent paths can only be identified tracing back the path from the end node (on the way from start to end, you won't know which direction will be taken in the next step, so you cannot identify equal paths yet). I've read some nice ideas that this could be overcome by modelling the maze as a 3D graph, using the directions as third dimension. If you like to play around with my solution, you can use the Logger module I created for printing the maze. It produces output like the following (`O` denoting the nodes on one of the shortes paths, `x` showing the visited nodes and `o` showing nodes on the open list):
+```
+      "###############",
+      "#xxxxxxx#....E#",
+      "#x#x###o#.###O#",
+      "#xxxxx#.#.ox#O#",
+      "#x###o#####x#O#",
+      "#x#x#xxxxxxx#O#",
+      "#x#x#####x###O#",
+      "#xxOOOOOOOOO#O#",
+      "###O#O#####O#O#",
+      "#OOO#Oxxxx#O#O#",
+      "#O#O#O###x#O#O#",
+      "#OOOOO#xxx#O#O#",
+      "#O###x#x#x#O#O#",
+      "#Sxx#xxxxx#OOO#",
+      "###############"
+```
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day16/transform.dwl#L1-L140
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day16/transform.dwl#L1-L140
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day16"><img width="300" src="images/dwplayground-button.png"></a>
@@ -210,9 +231,11 @@ Puzzle: [Reindeer Maze](https://adventofcode.com/2024/day/16)
 
 Puzzle: [Chronospatial Computer](https://adventofcode.com/2024/day/17)
 
+The simulation of the computer consists of a state (program, registers, output, instruction pointer) and an execute function that modifies this state recursively while running through the program. Part 1 lays the foundation by implementing the simulation, while part 2 represents the real puzzle. For this, I realized that the search can be done more efficiently, just looking at the suffix of the output and trying to grow if from right to left. Also, as we are working with octal numbers, it seems that the target value of a can be grown from left to right using octal numbers. In other words, the first digit of the input A determines the last part of the output, the second digit the part before and so on. Using this observation, the solution can be found in reasonable time. For the logging, I introduced an instruction logger that can easily be switch on and off by adjusting the function `ilog()` to either call the DataWeave `log()` or just return the value without logging.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day17/transform.dwl#L1-L84
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day17/transform.dwl#L1-L86
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day17"><img width="300" src="images/dwplayground-button.png"></a>
@@ -221,9 +244,11 @@ Puzzle: [Chronospatial Computer](https://adventofcode.com/2024/day/17)
 
 Puzzle: [RAM Run](https://adventofcode.com/2024/day/18)
 
+For this 2D puzzle, I was able to reuse my A* implementation of day 16 and use it successfully before I even managed to solve day 16. That gave me some confidence that my implementation is basically correct and I just needed some more fine-tuning to solve day 16. For part 2, I used a binary search to find the constellation where no path can be found anymore and to identify the block that eventually cuts off the path.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day18/transform.dwl#L1-L95
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day18/transform.dwl#L1-L95
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day18"><img width="300" src="images/dwplayground-button.png"></a>
@@ -232,9 +257,11 @@ Puzzle: [RAM Run](https://adventofcode.com/2024/day/18)
 
 Puzzle: [Linen Layout](https://adventofcode.com/2024/day/19)
 
+Similar to the puzzle of day 11, it is only possible to solve this by aggregating the results while recursing over them. Otherwise, you will end up with incredibly long execution times.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day19/transform.dwl#L1-L50
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day19/transform.dwl#L1-L50
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day19"><img width="300" src="images/dwplayground-button.png"></a>
@@ -243,9 +270,11 @@ Puzzle: [Linen Layout](https://adventofcode.com/2024/day/19)
 
 Puzzle: [Race Condition](https://adventofcode.com/2024/day/20)
 
+In this 2D puzzle, there is only one path from source to destination. In order to find the cheats, I prepare the track as an array of nodes and a map with the remaining distances. Then I walk along the track, at each node looking at all other nodes in range to check if there is another track node with a smaller remaining distance (including the distance to that node, of course). My linked solution prints the map of cheats, in order to get the requested result for the puzzle, you will have to comment in the sum and suitable filter values.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day20/transform.dwl#L1-L61
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day20/transform.dwl#L1-L61
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day20"><img width="300" src="images/dwplayground-button.png"></a>
@@ -254,9 +283,11 @@ Puzzle: [Race Condition](https://adventofcode.com/2024/day/20)
 
 Puzzle: [Keypad Conundrum](https://adventofcode.com/2024/day/21)
 
+There are two aspects that are worth mentioning for the solution of this puzzle: First, the order of the executed moves is important. See lines 41 to 48, which decide whether to start with horizontal or vertical moves - depending on the previous and next button -, in order to avoid moving over the blank space. And second, the solution for part 2, which is basically the same as for part 1 - just with added caching. Caching is inevitable here, and it is not that straightforward to implement in functional programming. As variables are immutable, we have to hand over the complete cache along with the current result from one function call to the next. Note that this recursive implementation is not tail recursive, which is ok as we only need 25 recursions.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day21/transform.dwl#L1-L61
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day21/transform.dwl#L1-L61
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day21"><img width="300" src="images/dwplayground-button.png"></a>
@@ -265,9 +296,11 @@ Puzzle: [Keypad Conundrum](https://adventofcode.com/2024/day/21)
 
 Puzzle: [Monkey Market](https://adventofcode.com/2024/day/22)
 
+For day 22, I gave up to find a performant solution in DataWeave. Part 1 can be improved a lot by implementing `mix()` and `prune()` (which is basically a simple random number generator) in Java. You would have to run it in Mule then as the DataWeave CLI does not support importing custom Java libraries. That's why I kept the calculation in DataWeave. For part 2, I could not find an optimization that would speed up the soltution, and it runs for ~21 hours on my machine. I assume, it is the memory handling of the recursive reduce, which becomes extremly slow after some recursions. If you have any idea how to decrease the execution time, please let me know!
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day22/transform.dwl#L1-L59
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day22/transform.dwl#L1-L59
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day22"><img width="300" src="images/dwplayground-button.png"></a>
@@ -276,9 +309,11 @@ Puzzle: [Monkey Market](https://adventofcode.com/2024/day/22)
 
 Puzzle: [LAN Party](https://adventofcode.com/2024/day/23)
 
+While part 1 can be solved straight-forward with some plucking and mapping, part 2 is the NP-complete [maximum clique problem](https://en.wikipedia.org/wiki/Clique_(graph_theory)). So I looked for an algorithm that solves it and ended up in using this [recursive solution](https://www.geeksforgeeks.org/maximal-clique-problem-recursive-solution/) as a blueprint. I "just" had to translate it to a functional implementation.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day23/transform.dwl#L1-L75
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day23/transform.dwl#L1-L74
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day23"><img width="300" src="images/dwplayground-button.png"></a>
@@ -287,9 +322,11 @@ Puzzle: [LAN Party](https://adventofcode.com/2024/day/23)
 
 Puzzle: [Crossed Wires](https://adventofcode.com/2024/day/24)
 
+Again a puzzle with a really easy part 1 and a part 2 that requires some thinking about the best approach. At first, I thought, I would need a complete enumeration of all wires, cross them systematically and check where the result fits - but there are too many. Then, I tried to systematically add numbers (2^0 + 2^0, 2^1 + 2^1, ...) to see where it fails. This gives a hint on where some wires are crossed, but not the exact wire. Finally, I realized that it is in fact a [ripple-carry adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder), so my solution is to follow the wires from the result bits towards the source and check where I find a wrong operation.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day24/transform.dwl#L1-L68
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day24/transform.dwl#L1-L68
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day24"><img width="300" src="images/dwplayground-button.png"></a>
@@ -298,9 +335,11 @@ Puzzle: [Crossed Wires](https://adventofcode.com/2024/day/24)
 
 Puzzle: [Code Chronicle](https://adventofcode.com/2024/day/25)
 
+And finally, an easy one for day 25. There is only one part, the second star is automatically awarded if you have solved all previous puzzles.
+
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/0d7cb6429b0a8e497b406218368bda4d32143987/day25/transform.dwl#L1-L25
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day25/transform.dwl#L1-L25
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day25"><img width="300" src="images/dwplayground-button.png"></a>
