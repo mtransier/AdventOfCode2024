@@ -55,7 +55,7 @@ var distance = track groupBy "$($.x)|$($.y)" mapObject { ($$): $.distance[0] }
         groupBy $ orderBy ($$ as Number) mapObject { ($$): sizeOf($) }
             //then sum(valuesOf($)))
     ,
-    part2: findCheats(track, 20) filter $ >= 50
+    part2: findCheats(track, 20) filter $ >= 50 // 100
         groupBy $ orderBy ($$ as Number) mapObject { ($$): sizeOf($) }
             //then sum(valuesOf($))
 }

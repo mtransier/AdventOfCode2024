@@ -25,7 +25,7 @@ type State = { openList: Array<Node>, closedList: Array<Position> }
 fun heuristic(position: Position, goal: Position): Number =
     abs(position.x - goal.x) + abs(position.y - goal.y)
 
-@TailRec
+@TailRec()
 fun aStar(state: State, bytes: Number): Number =
     if (isEmpty(state.openList)) -1
     else do {

@@ -44,7 +44,6 @@ fun isClique(size: Number, store: Array<Number>): Boolean = !(do {
 
 fun maxClique(startVertex: Number, currentSize: Number, store: Array<Number> = []): Array<Number> = (
     (startVertex + 1 to (sizeOf(hosts) - 1)) as Array<Number> map (nextVertex) -> do {
-        var logger = hosts[nextVertex]
         var newStore = store << nextVertex
         ---
         if (!isClique(currentSize + 1, newStore)) store

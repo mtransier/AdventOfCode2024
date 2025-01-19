@@ -40,6 +40,7 @@ fun ilog<T>(prefix: String = "", state: State, value: T): T =
     //log("$(state.ip) $(prefix)", value)
     value
 
+@TailRec()
 fun execute(state: State): State =
     if (state.ip >= sizeOf(state.program)) state
     else execute(
@@ -67,6 +68,7 @@ fun toOctal(decimal: Number): String =
 fun toDecimal(octal: String): Number =
     octal reduce $$ * 8 + $ as Number
 
+@TailRec()
 fun findSolution(a: Number, initialState: State): Number = do {
     var out = execute(initialState update { case .A -> a }).out joinBy ''
     var program = initialState.program joinBy ""
