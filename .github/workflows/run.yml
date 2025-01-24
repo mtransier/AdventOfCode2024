@@ -1,0 +1,32 @@
+name: Run DataWeave scripts
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'graalvm'
+          java-version: '11'
+      - name: Install DataWeave CLI
+        run: |
+          brew tap mulesoft-labs/data-weave
+          brew install dw
+      - name: Test DataWeave CLI
+        run: dw help
+      - name: Run DataWeave scripts
+        run: |
+          dw run -f day01/transform.dwl -i payload=day01/inputs/payload.txt 2>&1 | tee output
+      - name: Upload ouput
+        uses: actions/upload-artifact@v4
+        with:
+          name: output
+          path: output
