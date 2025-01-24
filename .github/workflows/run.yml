@@ -20,8 +20,7 @@ jobs:
         run: |
           curl -L https://github.com/mulesoft-labs/data-weave-cli/releases/download/v1.0.34/dw-1.0.34-Linux -o dw.zip
           mkdir .dw
-          unzip dw.zip -d .dw/
-          chmod u+x .dw/bin/dw
+          unzip dw.zip -d $HOME/.dw/
           echo "$HOME/.dw/bin" >> "$GITHUB_PATH"
       - name: Test DataWeave CLI
         run: dw help
