@@ -287,7 +287,7 @@ There are two aspects that are worth mentioning for the solution of this puzzle:
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day21/transform.dwl#L1-L61
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day21/transform.dwl#L1-L96
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day21"><img width="300" src="images/dwplayground-button.png"></a>
