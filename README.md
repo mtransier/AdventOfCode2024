@@ -222,7 +222,7 @@ Day 16 was the most challenging puzzle for me. After trying a depth-first search
 
 <details>
   <summary>Solution</summary>
-  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day16/transform.dwl#L1-L140
+  https://github.com/mtransier/AdventOfCode2024/blob/d18b0ac7c47aace27a43ce7aedaaaf77fb759dda/day16/transform.dwl#L1-L120
 </details>
 
 <a href="https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=mtransier%2FAdventOfCode2024&path=day16"><img width="300" src="images/dwplayground-button.png"></a>
